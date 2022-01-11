@@ -29,3 +29,18 @@ Regular expressions can also be used from the command line and within text-edito
 
 ## Regex Components
 
+### Anchors
+Anchors are characters within the regular expression that allow the user to match strings that begin with or ends with (or both) certain characters. 
+
+Examples of Anchors are as follows:
+
+* `^` - matches any string that start with the anterior word
+* `$` - matches a string that end with preceeding word before the character
+* Examples:
+```
+^Hello          matches any string starting with `Hello`
+World$          matches any string ending with `World`
+^Hello World$   matches exact string
+goodbye         matches any string that has the exact text `goodbye` in it
+```
+
