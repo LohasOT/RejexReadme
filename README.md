@@ -100,4 +100,17 @@ Examples of Character Classes are as follows:
 \S    matches a single non-` `
 ```
 
+### Flags
+Flags are optional parameters that we can add to a plain expression to make it search in a different way. Each flag is denoted by a single alphabetic character, and serves different purposes in modifying the expression's searching behavior.
+
+Examples of Flags are as follows:
+* `g` - Global, does not return after the first match, which restarted any subsequest searches from the end of the previous match (Makes the expression search for all occurences)
+* `m` - Multi-line, when enabled the Anchors (^ $) will match the start and end of a line, rather than the whole string
+* `i` - Insensitive, makes the entire expression case-insensitive
+* Examples:
+```
+/Hello/g   matches all `Hello` in the test
+/Hello/m   matches the beginning and ending of each line with `Hello`, rather than the whole string `Hello` itself
+/Hello/i   matches all `hello` despite case (Hello, hEllo, heLlo, hellO, hello, HELLO all match)
+```
 
