@@ -26,7 +26,7 @@ Regular expressions can also be used from the command line and within text-edito
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
-## Regex Components
+## The Regex Components
 
 ### Anchors
 Anchors are characters within the regular expression that allow the user to match strings that begin with or ends with (or both) certain characters. 
@@ -37,10 +37,10 @@ Examples of Anchors are as follows:
 * `$` - matches a string that end with preceeding word before the character
 * Examples:
 ```
-^Hello          matches any string starting with `Hello`
-World$          matches any string ending with `World`
-^Hello World$   matches exact string
-goodbye         matches any string that has the exact text `goodbye` in it
+^Oliver          matches any string starting with `Oliver`
+Car$          matches any string ending with `Car`
+^New Car$   matches exact string
+usedcar         matches any string that has the exact text `usedcar` in it
 ```
 
 ### Quantifiers
@@ -58,11 +58,11 @@ Examples of Quanitifers are as follows:
 xyz*        matches a string that has xy followed by zero or more z
 xyz+        matches a string that has xy followed by one or more z
 xyz?        matches a string that has xy followed by zero or one z
-xyz{2}      matches a string that has xy followed by 2 z
-xyz{2,}     matches a string that has xy followed by 2 or more z
-xyz{2,5}    matches a string that has xy followed by 2 up to 5 z
+xyz{4}      matches a string that has xy followed by 4 z
+xyz{4,}     matches a string that has xy followed by 4 or more z
+xyz{4,8}    matches a string that has xy followed by 4 up to 8 z
 x(yz)*      matches a string that has x followed by zero or more copies of the sequence yz
-x(yz){2,5}  matches a string that has x followed by 2 up to 5 copies of the sequence yz
+x(yz){4,8}  matches a string that has x followed by 4 up to 8 copies of the sequence yz
 ```
 
 ### OR Operator
