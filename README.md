@@ -44,3 +44,60 @@ World$          matches any string ending with `World`
 goodbye         matches any string that has the exact text `goodbye` in it
 ```
 
+### Quantifiers
+Qunatifiers are characters within the regular expression that specify how many instances a character, group, or character class must be represented in the input to be matched.
+
+Examples of Quanitifers are as follows:
+
+* `*` - matches a string that has the anterior followed by zero or more of the last character
+* `+` - matches a string that has the anterior followed by one or more of the last character
+* `?` - matches a string that has the atnerior follwoed by zero or one of the last character
+* `{}` -  matches a string that has the anterior followed by how ever many the number in the brackets of the last character in the string
+* `()*` - matches a string that has any anterior characters followed by zero or more copies of the string within the brackets
+* Examples:
+```
+xyz*        matches a string that has xy followed by zero or more z
+xyz+        matches a string that has xy followed by one or more z
+xyz?        matches a string that has xy followed by zero or one z
+xyz{2}      matches a string that has xy followed by 2 z
+xyz{2,}     matches a string that has xy followed by 2 or more z
+xyz{2,5}    matches a string that has xy followed by 2 up to 5 z
+x(yz)*      matches a string that has x followed by zero or more copies of the sequence yz
+x(yz){2,5}  matches a string that has x followed by 2 up to 5 copies of the sequence yz
+```
+
+### OR Operator
+OR Operators (Alternation Operator) matches on of a choice of regular expressions: if you put the character(s) representing the alternation operator between any two characters in the regular expression, the result matches the union of the strings that those two characters match.
+
+Examples of OR Operators are as follows:
+
+* `(|)` - matches a string that has any anterior characters followed by the characters on the left or right of the vertical bar
+* `[]` - matches a string that has any anterior characters without any characters within the brackets
+* Examples: 
+```
+x(y|z)  matches a string that has x followed by y or z (and captures y or z)
+x[yz]   matches a string that has x, but without capturing b or c
+```
+
+### Character Classes
+Character Classes (Character Set) tells the regex engine to match only one out serveral specific characters, such as digits, words, or whitespace
+
+Examples of Character Classes are as follows:
+
+* `\d` - matches a single character that is a digit
+* `\w` - matches a word character (any alphanumeric character plus underscore)
+* `\s` - matches a whitespace character (including tabs and line brakes)
+* `.` - matches any character
+* the capital case for any aformentioned characters will inverse the match
+* Examples:
+```
+\d    matches a single any digit 0-9
+\w    matches a single any character that is a-z
+\s    matches ` `
+.     matches any character
+\D    matches a single non-digit character
+\W    matches a single any non-character that is a-z
+\S    matches a single non-` `
+```
+
+
