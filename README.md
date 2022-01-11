@@ -114,3 +114,16 @@ Examples of Flags are as follows:
 /Hello/i   matches all `hello` despite case (Hello, hEllo, heLlo, hellO, hello, HELLO all match)
 ```
 
+### Grouping and Capturing
+Grouping unifies a pattern or string so that it is matched in a complete block
+
+Examples of Grouping are as follows:
+* `()` - parentheses creates a capture group
+* `(?:)` - using `?:` disables the capturing group
+* `(?<>)` - using `?<>` puts a name to the group
+* Examples:
+```
+x(yz)           parentheses create a capturing group with value yz
+x(?:yz)*        using ?: we disable the capturing group
+x(?<bar>yz)     using ?<bar> we put a name to the group
+```
