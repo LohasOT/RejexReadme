@@ -55,14 +55,14 @@ Examples of Quanitifers are as follows:
 * `()*` - matches a string that has any anterior characters followed by zero or more copies of the string within the brackets
 * Examples:
 ```
-xyz*        matches a string that has xy followed by zero or more z
-xyz+        matches a string that has xy followed by one or more z
-xyz?        matches a string that has xy followed by zero or one z
-xyz{4}      matches a string that has xy followed by 4 z
-xyz{4,}     matches a string that has xy followed by 4 or more z
-xyz{4,8}    matches a string that has xy followed by 4 up to 8 z
-x(yz)*      matches a string that has x followed by zero or more copies of the sequence yz
-x(yz){4,8}  matches a string that has x followed by 4 up to 8 copies of the sequence yz
+abc*        matches a string that has ab followed by zero or more c
+abc+        matches a string that has ab followed by one or more c
+abc?        matches a string that has ab followed by zero or one c
+abc{4}      matches a string that has ab followed by 4 c
+abc{4,}     matches a string that has ab followed by 4 or more c
+abc{4,8}    matches a string that has ab followed by 4 up to 8 c
+a(bc)*      matches a string that has a followed by zero or more copies of the sequence bc
+a(bc){4,8}  matches a string that has a followed by 4 up to 8 copies of the sequence bc
 ```
 
 ### OR Operator
