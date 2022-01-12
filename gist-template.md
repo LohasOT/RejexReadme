@@ -148,18 +148,19 @@ Examples of Flags are as follows:
 
 ### Character Escapes
 
-The backslash in a regular expression precedes a literal character. You also escape certain letters that represent common character classes, such as \w for a word character or \s for a space. The following example matches word characters (alphanumeric and underscores) and spaces.
+The backslash (\)  in a regular expression precedes a literal character. You also escape certain letters that represent common character classes, such as \w for a word character or \s for a space. The following example matches word characters (alphanumeric and underscores) and spaces.
+
 ```
-Char 	        Description 	                                          Meaning
-"\" 	         Backslash 	                                Used to escape a special character
-"^" 	           Caret 	                                      Beginning of a string
+Char 	         Description 	                                          Meaning
+"\" 	          Backslash 	                               Used to escape a special character
+"^" 	            Caret 	                                     Beginning of a string
 "$" 	         Dollar sign 	                                    End of a string
 "." 	        Period or dot 	                            Matches any single character
 "|"     	Vertical bar or pipe symbol 	              Matches previous OR next character/group
-"?"         	Question mark 	                            Match zero or one of the previous
-"*" 	      Asterisk or star 	                        Match zero, one or more of the previous
-"+"	          Plus sign                             	Match one or more of the previous
-"( )" 	Opening and closing parenthesis 	                          Group characters
+"?"            Question mark 	                            Match zero or one of the previous
+"*" 	        Asterisk or star 	                        Match zero, one or more of the previous
+"+"	            Plus sign                             	Match one or more of the previous
+"( )" 	Opening and closing parenthesis 	                      Group characters
 "[ ]" 	Opening and closing square bracket 	                Matches a range of characters
 "{ }" 	Opening and closing curly brace 	      Matches a specified number of occurrences of the previous
 
