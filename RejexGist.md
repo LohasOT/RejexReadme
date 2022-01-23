@@ -172,3 +172,5 @@ Oliver Hoang is a Junior Developer towards the end of his coding bootcamp at UCI
 Feel free to check out his GitHub repo for all of his previous projects
 
 [GitHub Profile](https://github.com/LohasOT)
+
+[GitHub Gist Link](https://gist.github.com/LohasOT/5eb8a45619588d7cf78430b4b7ad9531)
